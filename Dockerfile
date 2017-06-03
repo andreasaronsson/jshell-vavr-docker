@@ -2,11 +2,10 @@ FROM alpine:3.6
 
 MAINTAINER aron@aron.nu
 COPY ./startup.jsh /tmp/
-COPY ./entrypoint.sh /tmp/
 ENV VAVR=0.9.0
 ENV JAVA_HOME=/usr/lib/jvm/jdk-9 BUILD=171 PATH=${PATH}:${JAVA_HOME}/bin
 RUN apk add --update wget ca-certificates
-    
+
 RUN wget https://repo1.maven.org/maven2/io/vavr/vavr/${VAVR}/vavr-${VAVR}.jar -O /tmp/vavr.jar
 RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
 RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.java.net/java/jdk9/archive/${BUILD}/binaries/jdk-9-ea+${BUILD}_linux-x64-musl_bin.tar.gz -O /tmp/jdk-9.tar.gz
