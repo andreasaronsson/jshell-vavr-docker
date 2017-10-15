@@ -11,3 +11,4 @@ import io.vavr.collection.Map
 import io.vavr.collection.Stream
 import io.vavr.control.Try
 import io.vavr.Tuple
+import io.vavr.control.Option
