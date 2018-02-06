@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VAVR=0.9.1
+VAVR=0.9.2
 URL=http://download.java.net/java/jdk9-alpine/archive/181/binaries/jdk-9-ea+181_linux-x64-musl_bin.tar.gz
 curl $URL | tar xz
 
