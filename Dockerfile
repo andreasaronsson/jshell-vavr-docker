@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 MAINTAINER aron@aron.nu
 COPY ./vavr.jar ./startup.jsh /tmp/
