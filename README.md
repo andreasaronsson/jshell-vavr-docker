@@ -1,6 +1,6 @@
 # Java repl with preloaded vavr.io
 
-Java 10-ea+40
+Java 9-ea+181
 
 Alpine Linux 3.7
 
