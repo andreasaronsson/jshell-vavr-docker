@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM openjdk:11-jdk
 
 MAINTAINER aron@aron.nu
 COPY ./vavr.jar ./startup.jsh /tmp/
